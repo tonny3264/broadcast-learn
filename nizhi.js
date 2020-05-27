@@ -27,7 +27,6 @@ function nizhi(root){
         return root.next;
     }else{
         let result = nizhi(root.next);
-        // console.log(root.value, root.next);
         root.next.next = root;
         root.next = null;
         return result;
